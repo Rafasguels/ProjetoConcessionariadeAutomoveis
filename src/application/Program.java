@@ -22,7 +22,11 @@ public class Program {
 		
 		List<Estoque> estoque = new ArrayList<Estoque>();
 		
-		estoque.addAll(new Carro(GM, corsa, prata));
+		estoque.add(new Carro("gm", "celta", "prata"));
+		estoque.add(new Carro("gm", "corsa", "prata"));
+		estoque.add(new Carro("fiat", "palio", "branco"));
+		estoque.add(new Carro("fiat", "uno", "branco"));
+		estoque.add(new Carro("VW", "gol", "preto"));
 		
 		
 		Date data = new Date();//Buscando a data atual do sistema
@@ -56,7 +60,9 @@ public class Program {
 		
 		switch (input) {
         case 1:
-            System.out.println("");
+            System.out.println("Escolha um carro da nossa concessionaria");
+            
+            
             
             
             
